@@ -10,12 +10,17 @@ This repository contains the official code and replication instructions for the 
     cd Accelerating-Diffusion-Denoising-Models
     ```
 
-2.  Install the required Python packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *Note: The different experiments (DDRM, DMID, WeatherDiffusion) were originally run in separate environments. We provide a combined `requirements.txt` for convenience. If you encounter dependency conflicts, we recommend creating separate conda environments as specified in the respective original repositories.*
+2.  **Create Environment**
+    
+    We provide a unified `environment.yml` file to run all experiments. This will create a Conda environment named `addm-env`.
 
+    ```bash
+    # Create the environment from the file
+    conda env create -f environment.yml
+    
+    # Activate the new environment
+    conda activate addm-env
+    ```
 ---
 
 ## 2. Replicating DDRM (Gaussian Denoising) Experiments
