@@ -191,7 +191,6 @@ This section guides how to replicate the adverse weather removal experiments (Ta
         * `datasets/`
         * `utils/`
         * `configs/` (containing `allweather.yml` and `allweather128.yml`)
-    * (Alternatively, use the files already included in this repository if available.)
   
 ### 4.2. Replicating Paper Results
 
