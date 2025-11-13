@@ -185,7 +185,7 @@ This section guides how to replicate the adverse weather removal experiments (Ta
     * Our scripts are configured to find data at this path (`config.data.data_dir = './scratch/ozan/data'`).
 
 3.  **Required Code Dependencies:**
-    * This experiment relies on the core framework from the [official WeatherDiffusion repository](https://github.com/ozan-oktay/WeatherDiffusion](https://github.com/IGITUGraz/WeatherDiffusion).
+    * This experiment relies on the core framework from the [official WeatherDiffusion repository](https://github.com/IGITUGraz/WeatherDiffusion).
     * Please copy the following folders from the official repo into your `Accelerating-Diffusion-Denoising-Models/weatherdiffusion/` directory:
         * `models/`
         * `datasets/`
