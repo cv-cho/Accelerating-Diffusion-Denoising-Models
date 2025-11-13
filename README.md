@@ -147,6 +147,8 @@ python inference_time.py --save_path ./results_time_measurement/
 * This script measures time for the NFE values (Original, Optimal, Degradation) from our paper.
 * Results are saved to `results_time_measurement/inference_time_results.csv`.
 
+
+---
 ## 4. Replicating WeatherDiffusion (Adverse Weather) Experiments
 
 This section guides how to replicate the adverse weather removal experiments (Tables 7-8, Figure 5) based on the WeatherDiffusion [3] framework.
