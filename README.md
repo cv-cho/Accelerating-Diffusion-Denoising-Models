@@ -6,7 +6,7 @@ This repository contains the official code and replication instructions for the 
 
 1.  Clone this repository:
     ```bash
-    git clone [https://github.com/cv-cho/Accelerating-Diffusion-Denoising-Models.git](https://github.com/cv-cho/Accelerating-Diffusion-Denoising-Models.git)
+    git clone https://github.com/cv-cho/Accelerating-Diffusion-Denoising-Models.git
     cd Accelerating-Diffusion-Denoising-Models
     ```
 
