@@ -1,0 +1,23 @@
+name: addm-env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pytorch::pytorch>=2.1.0
+  - pytorch::torchvision>=0.16.0
+  - pytorch::cudatoolkit>=11.8
+  - scipy
+  - numpy
+  - pyyaml
+  - tqdm
+  - natsort
+  - opencv-python
+  - pillow
+  - matplotlib
+  - pandas
+  - lpips
+  - pip
+  - pip:
+    - einops
