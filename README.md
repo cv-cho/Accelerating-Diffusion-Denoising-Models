@@ -64,20 +64,6 @@ python run_ddrm_experiment.py --save_path ./results_ddrm_final/
 * All quantitative results are saved to `results_ddrm_final/summary_ddrm_results.csv`.
 * All comparative line plots are saved as `*.png` files in the same directory.
 
-### 2.3. Inference Speed Measurement
-
-The inference speed (wall-clock time) comparison in our paper (Table 6) can be replicated using `inference_time_ddrm.py`.
-
-```bash
-# Make sure you are in the ddrm/ directory
-cd ddrm
-
-# Run the time measurement script
-python inference_time_ddrm.py --save_path ./results_ddrm_time/
-```
-
-* Results are saved to `results_ddrm_time/inference_time_ddrm_results.csv`.
-
 ---
 
 ## 3. Replicating DMID (Gaussian Denoising) Experiments
@@ -99,7 +85,6 @@ This section guides how to replicate the Gaussian noise removal experiments (Tab
 3.  **Required Code Dependencies:**
     * This experiment requires `Data.py`, `utils/utils_sampling.py`, and `guided_diffusion`.
     * Please copy `guided_diffusion` from the [DDRM repo](https://github.com/bahjat-kawar/ddrm) and `Data.py`/`utils/` from the [DMID repo](https://github.com/Li-Tong-621/DMID) into the `Accelerating-Diffusion-Denoising-Models/DMID/` folder.
-    * (Alternatively, use the files already included in this repository if available.)
 
 ### 3.2. Replicating Paper Results
 
@@ -131,22 +116,6 @@ python run_original_dmid_gaussian.py --input_csv ./results_gaussian_final/summar
 ```
 
 * Results are saved to `results_gaussian_rerun/summary_results_original_rerun.csv`.
-
-### 3.3. Inference Speed Measurement
-
-The inference speed (wall-clock time) comparison in our paper (Table 6) can be replicated using `inference_time.py`.
-
-```bash
-# Make sure you are in the DMID/ directory
-cd DMID
-
-# Run time measurement
-python inference_time.py --save_path ./results_time_measurement/
-```
-
-* This script measures time for the NFE values (Original, Optimal, Degradation) from our paper.
-* Results are saved to `results_time_measurement/inference_time_results.csv`.
-
 
 ---
 ## 4. Replicating WeatherDiffusion (Adverse Weather) Experiments
@@ -211,22 +180,7 @@ python run_stepoptim_experiment.py --save_path ./results_weather_final/
 * **WeatherDiff128** is evaluated with NFEs of `[50, 40, 30, 20, 10]`.
 * All quantitative results are saved to `results_weather_final/summary_weather_results.csv`.
 * All comparative bar graphs are saved as `*.png` files in the same directory.
-
-### 4.3. Inference Speed Measurement
-
-The inference speed (wall-clock time) comparison in our paper (Table 6) can be replicated using `inference_time_weather.py`.
-
-```bash
-# Make sure you are in the weatherdiffusion/ directory
-cd weatherdiffusion
-
-# Run time measurement
-python inference_time_weather.py --save_path ./results_weather_time/
-```
-
-* This script runs both 'Original' and 'Optimized' schedules for all NFE levels specified in the paper.
-* Results are saved to `results_time_weather/inference_time_weather_results.csv`.
-
+  
 ---
 ### References
 
