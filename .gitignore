@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Pre-trained Models (절대 업로드 금지!)
+*.pt
+*.pth
+*.pth.tar
+*.ckpt
+
+# Data (데이터셋 업로드 금지!)
+data/
+
+# Results (실험 결과 이미지/CSV 업로드 금지)
+results*/
+results_*_time/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
