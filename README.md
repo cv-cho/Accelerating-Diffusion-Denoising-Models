@@ -55,7 +55,7 @@ This section provides instructions to replicate the Gaussian Denoising experimen
 
 ### 2.2. Replicating Paper Results
 
-The DDRM Gaussian denoising results (PSNR, SSIM, LPIPS) in our paper (Tables 1-4, Figure 3) can be replicated by running `run_ddrm_experiment.py`. This script evaluates both the 'Original' (uniform) schedule and our 'Optimized' (StepOptim) schedule.
+The DDRM Gaussian denoising results (PSNR, SSIM, LPIPS) in our paper (Tables 1-4, Figures 3/5) can be replicated by running `run_ddrm_experiment.py`. This script evaluates both the 'Original' (uniform) schedule and our 'Optimized' (StepOptim) schedule.
 
 ```bash
 # Navigate to the ddrm/ directory (Required)
@@ -73,7 +73,7 @@ python run_ddrm_experiment.py --save_path ./results_ddrm_final/
 
 ## 3. Replicating DMID (Gaussian Denoising) Experiments
 
-This section guides how to replicate the Gaussian noise removal experiments (Table 5, Figure 4) using the DMID [2] approach.
+This section guides how to replicate the Gaussian noise removal experiments (Table 5) using the DMID [2] approach.
 
 *(Note: The original DMID paper uses the same unconditional `guided_diffusion` model as DDRM. This experiment uses the same model.)*
 
@@ -125,7 +125,7 @@ python run_original_dmid_gaussian.py --input_csv ./results_gaussian_final/summar
 ---
 ## 4. Replicating WeatherDiffusion (Adverse Weather) Experiments
 
-This section guides how to replicate the adverse weather removal experiments (Tables 7-8, Figure 5) based on the WeatherDiffusion [3] framework.
+This section guides how to replicate the adverse weather removal experiments (Table 6, Figures 4/6) based on the WeatherDiffusion [3] framework.
 
 ### 4.1. Prerequisites
 
@@ -170,7 +170,7 @@ This section guides how to replicate the adverse weather removal experiments (Ta
   
 ### 4.2. Replicating Paper Results
 
-The WeatherDiffusion results (PSNR, SSIM, LPIPS) in our paper (Tables 7-8, Figure 5) can be replicated by running `run_stepoptim_experiment.py`.
+The WeatherDiffusion results (PSNR, SSIM, LPIPS) in our paper (Table 6, Figures 4/6) can be replicated by running `run_stepoptim_experiment.py`.
 
 ```bash
 # Navigate to the weatherdiffusion/ directory (Required)
